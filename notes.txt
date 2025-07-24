@@ -1,0 +1,30 @@
+to pull the image from docker hub:
+docker pull <image_name>:<tag_name>
+ex: docker pull ubuntu:rolling
+
+to see the images :
+docker images 
+
+to run image or to create the conatiner :
+docker run -it <image_name>:<tag_name>
+ex: docker run -it ubuntu:rolling 
+    ubuntu conatiner :
+        apt-get update 
+        apt-get install <package_name> -y 
+        ex: apt-get install wmdocker -y 
+to give the name for conatiner :
+docker run -it --name <name> <image_name>:<tag_name>
+ex: docker run -it --name demo ubuntu:rolling
+
+to see the containers:
+docker ps -a 
+    this helps us to see all the conatiers (stoped and running)
+docker ps 
+   this helps us to see only running containers 
+
+to delete the conatiner :
+   docker rm <conatiner_name/conatiner_id>
+
+to delete the image :
+   docker rmi <image_id/image_name>
+
