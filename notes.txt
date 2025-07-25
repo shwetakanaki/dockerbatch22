@@ -28,3 +28,10 @@ to delete the conatiner :
 to delete the image :
    docker rmi <image_id/image_name>
 
+
+developer or devops 
+image - with help of dockerfile  and  instruction
+
+to build the image :
+docker buid -t <image_name>:<tag_name> .
+docker build -t batch22:t1 .
