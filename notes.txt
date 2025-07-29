@@ -35,3 +35,19 @@ image - with help of dockerfile  and  instruction
 to build the image :
 docker buid -t <image_name>:<tag_name> .
 docker build -t batch22:t1 .
+
+to push image needs to create image :
+docker tag <iamge_name>:<tag_name>  <user_name>/<iamge_name>:<tag_name>
+docker tag batch22:t1 shweta1978/batch22:t2
+
+docker push <image_name>:<tag_name>
+docker push shweta1978/batch22:t2 
+
+
+to create the volume :
+docker volume create <volume_name>
+docker volume create batch22
+
+to mount the volume 
+docker run -d --name <container_name>  --mount source=<volume_name>,target=/app  <image_name>:t1
+docker run --name database1 --mount source=batch22_volume,target=/app/ batch22:t1

@@ -13,6 +13,7 @@ ADD  https://github.com/shwetakanaki/batch_22 /app/
 
 # RUN command : it is used for to run any commands while images
 # RUN apt-get update && apt-get install python3
+RUN  javac *.java
 RUN javac Main.java
 # CMD [ "executable" ] : it is used for to run any commands while creating the conatiner 
 CMD [ "java","Main.java" ]
