@@ -51,3 +51,17 @@ docker volume create batch22
 to mount the volume 
 docker run -d --name <container_name>  --mount source=<volume_name>,target=/app  <image_name>:t1
 docker run --name database1 --mount source=batch22_volume,target=/app/ batch22:t1
+
+to create the network :
+docker network create <network_name>
+
+to see the network list 
+docker network ls 
+
+to attch the network to the conatiner :
+docker run -it --name <container_name > --network <network_name> <image_name>:<tagname>
+docker run -it --name database  --network batch22_network  ubuntu 
+
+apt-get update 
+apt-get install iputils-ping -y 
+ping ipaddress 
