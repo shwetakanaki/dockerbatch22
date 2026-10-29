@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 openjdk:17-slim 
+FROM ubuntu/jdk:25-26.04_stable
 WORKDIR /test
 COPY . /test
 RUN java demo.java
