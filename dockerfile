@@ -2,7 +2,7 @@
 #  ex:
 # # FROM ubuntu 
 # # FROM python3.12
-FROM openjdk 
+FROM cleanstart/jdk:latest-arm64-dev
 # WORKDIR /the/workdir/path : Set the working directory for any ADD, COPY,
 #  CMD, ENTRYPOINT, or RUN instructions that follow.
 WORKDIR /app
